@@ -5,9 +5,10 @@ import { TodoModule } from './todo/todo.module';
 import { AuthModule } from './auth/auth.module';
 import {TodoController} from "./todo/todo.controller";
 import {TodoService} from "./todo/todo.service";
+import { UserModule } from './user/user.module';
 
 @Module({
-  imports: [TodoModule, AuthModule],
+  imports: [TodoModule, AuthModule, UserModule],
   controllers: [AppController, TodoController],
   providers: [AppService, TodoService],
 })
